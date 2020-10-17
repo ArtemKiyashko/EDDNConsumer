@@ -1,0 +1,1998 @@
+[
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-10T22:17:02.662530Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.3.0",
+            "uploaderID": "f58f252e04016d41e0e762e7a7bde5485025e292"
+        },
+        "message": {
+            "AbsoluteMagnitude": 22.658615,
+            "Age_MY": 1776,
+            "AxialTilt": 2.940987,
+            "BodyID": 30,
+            "BodyName": "Col 359 Sector RZ-F d11-52 5",
+            "DistanceFromArrivalLS": 2350.555968,
+            "Eccentricity": 0.141503,
+            "Luminosity": "V",
+            "OrbitalInclination": -7.561941,
+            "OrbitalPeriod": 22033467.292786,
+            "Parents": [
+                {
+                    "Null": 29
+                },
+                {
+                    "Star": 0
+                }
+            ],
+            "Periapsis": 157.943419,
+            "Radius": 40476028.0,
+            "Rings": [
+                {
+                    "InnerRad": 103680000.0,
+                    "MassMT": 9403900000000.0,
+                    "Name": "Col 359 Sector RZ-F d11-52 5 A Ring",
+                    "OuterRad": 578160000.0,
+                    "RingClass": "eRingClass_MetalRich"
+                }
+            ],
+            "RotationPeriod": 74254.857883,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 220113652.944565,
+            "StarPos": [
+                -434.75,
+                65.59375,
+                1038.125
+            ],
+            "StarSystem": "Col 359 Sector RZ-F d11-52",
+            "StarType": "Y",
+            "StellarMass": 0.011719,
+            "Subclass": 5,
+            "SurfaceTemperature": 343.0,
+            "SystemAddress": 1797099899347,
+            "WasDiscovered": true,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-10T22:16:58Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-11T13:53:52.823156Z",
+            "softwareName": "EDSM - Console",
+            "softwareVersion": "1.0",
+            "uploaderID": "8af7162bbf88003117c7cd18978b682ecfa2131a"
+        },
+        "message": {
+            "Body": "Outorst DV-G d10-17",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Population": 0,
+            "StarPos": [
+                -1528.375,
+                119.21875,
+                -1464.90625
+            ],
+            "StarSystem": "Outorst DV-G d10-17",
+            "SystemAddress": 594274175195,
+            "SystemAllegiance": "",
+            "SystemEconomy": "$economy_None;",
+            "SystemGovernment": "$government_None;",
+            "SystemSecondEconomy": "$economy_None;",
+            "SystemSecurity": "$GAlAXY_MAP_INFO_state_anarchy;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-11T13:46:16Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-11T13:53:52.981832Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "25c3fc198ca225a0ed157e46bb9aa989daf83ad2"
+        },
+        "message": {
+            "Atmosphere": "",
+            "AtmosphereType": "None",
+            "AxialTilt": -0.40392,
+            "BodyID": 36,
+            "BodyName": "Eoch Flyuae PQ-K b38-20 5 b",
+            "Composition": {
+                "Ice": 0.824975,
+                "Metal": 0.01569,
+                "Rock": 0.159334
+            },
+            "DistanceFromArrivalLS": 1098.807177,
+            "Eccentricity": 0.001118,
+            "Landable": true,
+            "MassEM": 0.001781,
+            "Materials": [
+                {
+                    "Name": "sulphur",
+                    "Percent": 26.651529
+                },
+                {
+                    "Name": "carbon",
+                    "Percent": 22.411175
+                },
+                {
+                    "Name": "phosphorus",
+                    "Percent": 14.348019
+                },
+                {
+                    "Name": "iron",
+                    "Percent": 11.994934
+                },
+                {
+                    "Name": "nickel",
+                    "Percent": 9.072466
+                },
+                {
+                    "Name": "chromium",
+                    "Percent": 5.394521
+                },
+                {
+                    "Name": "manganese",
+                    "Percent": 4.953786
+                },
+                {
+                    "Name": "zinc",
+                    "Percent": 3.259775
+                },
+                {
+                    "Name": "antimony",
+                    "Percent": 0.731341
+                },
+                {
+                    "Name": "tungsten",
+                    "Percent": 0.658642
+                },
+                {
+                    "Name": "mercury",
+                    "Percent": 0.523799
+                }
+            ],
+            "OrbitalInclination": -0.232793,
+            "OrbitalPeriod": 536781.054735,
+            "Parents": [
+                {
+                    "Planet": 33
+                },
+                {
+                    "Star": 0
+                }
+            ],
+            "Periapsis": 213.205099,
+            "PlanetClass": "Icy body",
+            "Radius": 1068475.125,
+            "RotationPeriod": 536833.020138,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 674198126.792908,
+            "StarPos": [
+                -8871.71875,
+                -780.96875,
+                17684.3125
+            ],
+            "StarSystem": "Eoch Flyuae PQ-K b38-20",
+            "SurfaceGravity": 0.621933,
+            "SurfacePressure": 0.0,
+            "SurfaceTemperature": 61.373486,
+            "SystemAddress": 44532231717193,
+            "TerraformState": "",
+            "TidalLock": true,
+            "Volcanism": "",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-11T13:53:52Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:12:30.184773Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "6b7389ec86eadd881fa9a46aa107d3c99ab4a809"
+        },
+        "message": {
+            "AbsoluteMagnitude": 7.704468,
+            "Age_MY": 2170,
+            "AxialTilt": 0.0,
+            "BodyID": 2,
+            "BodyName": "Stuemeae MM-W d1-3874 B",
+            "DistanceFromArrivalLS": 232151.284196,
+            "Eccentricity": 0.105168,
+            "Luminosity": "Va",
+            "OrbitalInclination": 15.967124,
+            "OrbitalPeriod": 211060047149.658,
+            "Parents": [
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 308.995426,
+            "Radius": 424732960.0,
+            "RotationPeriod": 271063.272302,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 48497259020805.4,
+            "StarPos": [
+                260.53125,
+                -15.65625,
+                25988.71875
+            ],
+            "StarSystem": "Stuemeae MM-W d1-3874",
+            "StarType": "K",
+            "StellarMass": 0.476563,
+            "Subclass": 9,
+            "SurfaceTemperature": 3815.0,
+            "SystemAddress": 133120170922899,
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:12:30Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:13:12.059079Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "1b3ab1c3d4892d33c78053b69ba4be69d93ca04a"
+        },
+        "message": {
+            "Atmosphere": "thin neon atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Neon",
+                    "Percent": 100.0
+                }
+            ],
+            "AtmosphereType": "Neon",
+            "AxialTilt": -0.424823,
+            "BodyID": 35,
+            "BodyName": "Preae Aewsy KC-R b32-11 BCD 4",
+            "Composition": {
+                "Ice": 0.681538,
+                "Metal": 0.106823,
+                "Rock": 0.211639
+            },
+            "DistanceFromArrivalLS": 180860.824435,
+            "Eccentricity": 0.005977,
+            "Landable": false,
+            "MassEM": 0.467622,
+            "OrbitalInclination": 0.141458,
+            "OrbitalPeriod": 561605441.570282,
+            "Parents": [
+                {
+                    "Null": 2
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 72.122918,
+            "PlanetClass": "Icy body",
+            "Radius": 6163338.5,
+            "RotationPeriod": 72830.973308,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 833941900730.133,
+            "StarPos": [
+                -4497.71875,
+                64.625,
+                8606.0625
+            ],
+            "StarSystem": "Preae Aewsy KC-R b32-11",
+            "SurfaceGravity": 4.906503,
+            "SurfacePressure": 292.197235,
+            "SurfaceTemperature": 33.707874,
+            "SystemAddress": 24799812530969,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "major water magma volcanism",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:13:11Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:16:36.020833Z",
+            "softwareName": "EDDI",
+            "softwareVersion": "3.7.0",
+            "uploaderID": "4232b6355f2ea75bb3bba6fb0a138385c1ffbcaa"
+        },
+        "message": {
+            "Atmosphere": "thick nitrogen atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Nitrogen",
+                    "Percent": 99.967575
+                }
+            ],
+            "AtmosphereType": "Nitrogen",
+            "AxialTilt": 1.617086,
+            "BodyID": 13,
+            "BodyName": "Syrumbie IS-N c9-0 B 4",
+            "Composition": {
+                "Ice": 0.521907,
+                "Metal": 0.158389,
+                "Rock": 0.319704
+            },
+            "DistanceFromArrivalLS": 19281.421608,
+            "Eccentricity": 5e-05,
+            "Landable": false,
+            "MassEM": 0.275061,
+            "OrbitalInclination": 0.074612,
+            "OrbitalPeriod": 148780649.900436,
+            "Parents": [
+                {
+                    "Star": 2
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 115.896398,
+            "PlanetClass": "Icy body",
+            "Radius": 4969619.5,
+            "RotationPeriod": 74046.497105,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 310537213087.0819,
+            "StarPos": [
+                2197.875,
+                -2737.9375,
+                22401.78125
+            ],
+            "StarSystem": "Syrumbie IS-N c9-0",
+            "SurfaceGravity": 4.439078,
+            "SurfacePressure": 61626624.0,
+            "SurfaceTemperature": 131.041367,
+            "SystemAddress": 87541294162,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:16:35Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:23:56.160674Z",
+            "softwareName": "EDDI",
+            "softwareVersion": "3.7.0",
+            "uploaderID": "61b0d6fc893d78522b501256abcb003f4e9554b4"
+        },
+        "message": {
+            "Atmosphere": "thin argon atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Argon",
+                    "Percent": 100.0
+                }
+            ],
+            "AtmosphereType": "Argon",
+            "AxialTilt": -1.829063,
+            "BodyID": 30,
+            "BodyName": "Diaguandri C 3",
+            "Composition": {
+                "Ice": 0.669781,
+                "Metal": 0.110228,
+                "Rock": 0.219991
+            },
+            "DistanceFromArrivalLS": 14045.238136,
+            "Eccentricity": 5.5e-05,
+            "Landable": false,
+            "MassEM": 0.001636,
+            "OrbitalInclination": -0.023424,
+            "OrbitalPeriod": 87211216.688156,
+            "Parents": [
+                {
+                    "Star": 4
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 228.931969,
+            "PlanetClass": "Icy body",
+            "Radius": 985168.9375,
+            "RotationPeriod": 84515.078773,
+            "ScanType": "NavBeaconDetail",
+            "SemiMajorAxis": 155994850397.11,
+            "StarPos": [
+                -41.0625,
+                -62.15625,
+                -103.25
+            ],
+            "StarSystem": "Diaguandri",
+            "SurfaceGravity": 0.671692,
+            "SurfacePressure": 184.31044,
+            "SurfaceTemperature": 56.539326,
+            "SystemAddress": 670417429889,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "",
+            "WasDiscovered": false,
+            "WasMapped": true,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:23:53Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:27:23.855429Z",
+            "softwareName": "EDSM",
+            "softwareVersion": "1.0.1",
+            "uploaderID": "2291c1ea3e4f1fb7cc7ec176c4b74fd48d4fcc3f"
+        },
+        "message": {
+            "Atmosphere": "hot thick carbon dioxide atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "CarbonDioxide",
+                    "Percent": 91.811142
+                },
+                {
+                    "Name": "SulphurDioxide",
+                    "Percent": 8.188854
+                }
+            ],
+            "AtmosphereType": "CarbonDioxide",
+            "AxialTilt": 0.171887,
+            "BodyID": 4,
+            "BodyName": "Byiae Aick PI-K d8-0 3",
+            "Composition": {
+                "Ice": 0,
+                "Metal": 0.331714,
+                "Rock": 0.668286
+            },
+            "DistanceFromArrivalLS": 665.404016,
+            "Eccentricity": 5.3e-05,
+            "Landable": false,
+            "MassEM": 0.257901,
+            "OrbitalInclination": 0.407611,
+            "OrbitalPeriod": 42987997.531891,
+            "Parents": [
+                {
+                    "Star": 0
+                }
+            ],
+            "Periapsis": 336.367562,
+            "PlanetClass": "High metal content body",
+            "Radius": 4014354.25,
+            "RotationPeriod": 76764.271354,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 199472630023.9563,
+            "StarPos": [
+                38931.34375,
+                93.53125,
+                16364.40625
+            ],
+            "StarSystem": "Byiae Aick PI-K d8-0",
+            "SurfaceGravity": 6.378679,
+            "SurfacePressure": 520856.15625,
+            "SurfaceTemperature": 521.700623,
+            "SystemAddress": 18647896011,
+            "TerraformState": "Terraformable",
+            "TidalLock": false,
+            "Volcanism": "",
+            "WasDiscovered": true,
+            "WasMapped": true,
+            "event": "Scan",
+            "timestamp": "2020-10-11T13:02:29Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:34:48.472767Z",
+            "softwareName": "GameGlass",
+            "softwareVersion": "2.2.2",
+            "uploaderID": "7c8b98d240ef4da060cb7abc538341d02f06a6c8"
+        },
+        "message": {
+            "Atmosphere": "helium atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Helium",
+                    "Percent": 89.334976
+                },
+                {
+                    "Name": "Hydrogen",
+                    "Percent": 8.427828
+                },
+                {
+                    "Name": "Neon",
+                    "Percent": 2.237205
+                }
+            ],
+            "AtmosphereType": "Helium",
+            "AxialTilt": -0.060501,
+            "BodyID": 49,
+            "BodyName": "ICZ JN-S b4-6 ABCD 5",
+            "Composition": {
+                "Ice": 0.684008,
+                "Metal": 0.104311,
+                "Rock": 0.211519
+            },
+            "DistanceFromArrivalLS": 3722.988196,
+            "Eccentricity": 0.00664,
+            "Landable": false,
+            "MassEM": 9.548385,
+            "OrbitalInclination": -0.297524,
+            "OrbitalPeriod": 697816413.640976,
+            "Parents": [
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 98.735569,
+            "PlanetClass": "Icy body",
+            "Radius": 14652743.0,
+            "ReserveLevel": "PristineResources",
+            "Rings": [
+                {
+                    "InnerRad": 23527000.0,
+                    "MassMT": 1816300000.0,
+                    "Name": "ICZ JN-S b4-6 ABCD 5 A Ring",
+                    "OuterRad": 73856000.0,
+                    "RingClass": "eRingClass_Icy"
+                }
+            ],
+            "RotationPeriod": 116407.720604,
+            "ScanType": "AutoScan",
+            "SemiMajorAxis": 1094134390354.1565,
+            "StarPos": [
+                15.5625,
+                -79.65625,
+                58.125
+            ],
+            "StarSystem": "ICZ JN-S b4-6",
+            "SurfaceGravity": 17.725619,
+            "SurfacePressure": 171080.375,
+            "SurfaceTemperature": 30.725765,
+            "SystemAddress": 13865362204097,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "water geysers volcanism",
+            "WasDiscovered": true,
+            "WasMapped": true,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:34:47Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:37:20.991678Z",
+            "softwareName": "EDSM",
+            "softwareVersion": "1.0.1",
+            "uploaderID": "2291c1ea3e4f1fb7cc7ec176c4b74fd48d4fcc3f"
+        },
+        "message": {
+            "BodyID": 8,
+            "BodyName": "Nueliae KC-S d5-5 A Belt Cluster 2",
+            "DistanceFromArrivalLS": 214.835511,
+            "Parents": [
+                {
+                    "Ring": 6
+                },
+                {
+                    "Star": 0
+                }
+            ],
+            "ScanType": "AutoScan",
+            "StarPos": [
+                35667.625,
+                -175.5,
+                13546.4375
+            ],
+            "StarSystem": "Nueliae KC-S d5-5",
+            "SystemAddress": 189758672563,
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T20:36:00Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:45:40.520377Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "6722e63ae3b98385ec71af6c70efc4bd6bbbbb98"
+        },
+        "message": {
+            "BodyID": 28,
+            "BodyName": "Nyeakaa BA-Z c16-3 C A Belt Cluster 4",
+            "DistanceFromArrivalLS": 34920.690814,
+            "Parents": [
+                {
+                    "Ring": 24
+                },
+                {
+                    "Star": 4
+                },
+                {
+                    "Null": 2
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "ScanType": "AutoScan",
+            "StarPos": [
+                5275.125,
+                -289.0625,
+                7370.65625
+            ],
+            "StarSystem": "Nyeakaa BA-Z c16-3",
+            "SystemAddress": 917344393362,
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:45:35Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:45:40.614304Z",
+            "softwareName": "EDSM - Console",
+            "softwareVersion": "1.0",
+            "uploaderID": "63241144957e79bf853b6e62069c1cbff6e3bbd5"
+        },
+        "message": {
+            "Atmosphere": "thick nitrogen atmosphere",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Nitrogen",
+                    "Percent": 99.999535
+                }
+            ],
+            "AtmosphereType": "Nitrogen",
+            "AxialTilt": -0.154666,
+            "BodyID": 8,
+            "BodyName": "Synuefe IC-Z b47-1 A 2",
+            "Composition": {
+                "Ice": 0.685229,
+                "Metal": 0.103853,
+                "Rock": 0.210918
+            },
+            "DistanceFromArrivalLS": 596.110726,
+            "Eccentricity": 1.7e-05,
+            "Landable": false,
+            "MassEM": 0.279116,
+            "OrbitalInclination": 0.093108,
+            "OrbitalPeriod": 89706036.448479,
+            "Parents": [
+                {
+                    "Star": 1
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 309.78282,
+            "PlanetClass": "Icy body",
+            "Radius": 5256323,
+            "RotationPeriod": 58716.484885,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 178710877895.35522,
+            "StarPos": [
+                432.71875,
+                -128.6875,
+                -31.65625
+            ],
+            "StarSystem": "Synuefe IC-Z b47-1",
+            "SurfaceGravity": 4.02652,
+            "SurfacePressure": 42302828,
+            "SurfaceTemperature": 65.098572,
+            "SystemAddress": 2875614438809,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "",
+            "WasDiscovered": true,
+            "WasMapped": true,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:41:46Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T22:59:52.015324Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "1b3ab1c3d4892d33c78053b69ba4be69d93ca04a"
+        },
+        "message": {
+            "Atmosphere": "",
+            "AtmosphereComposition": [
+                {
+                    "Name": "Hydrogen",
+                    "Percent": 74.601456
+                },
+                {
+                    "Name": "Helium",
+                    "Percent": 25.39854
+                }
+            ],
+            "AxialTilt": -0.356022,
+            "BodyID": 10,
+            "BodyName": "Lysoosms XW-M b48-21 AB 1",
+            "DistanceFromArrivalLS": 27371.578558,
+            "Eccentricity": 0.077423,
+            "Landable": false,
+            "MassEM": 24.885607,
+            "OrbitalInclination": -130.333441,
+            "OrbitalPeriod": 21635820865.631104,
+            "Parents": [
+                {
+                    "Null": 1
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "Periapsis": 251.259136,
+            "PlanetClass": "Sudarsky class I gas giant",
+            "Radius": 23447118.0,
+            "RotationPeriod": 69775.090089,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 8751825690269.471,
+            "StarPos": [
+                -3838.1875,
+                47.21875,
+                7657.9375
+            ],
+            "StarSystem": "Lysoosms XW-M b48-21",
+            "SurfaceGravity": 18.041751,
+            "SurfacePressure": 0.0,
+            "SurfaceTemperature": 14.616238,
+            "SystemAddress": 46798903390625,
+            "TerraformState": "",
+            "TidalLock": false,
+            "Volcanism": "",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T22:59:51Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:05:31.354478Z",
+            "softwareName": "GameGlass",
+            "softwareVersion": "2.2.2",
+            "uploaderID": "7c8b98d240ef4da060cb7abc538341d02f06a6c8"
+        },
+        "message": {
+            "Body": "Col 359 Sector DL-V b45-4",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Population": 0,
+            "StarPos": [
+                -373.4375,
+                -2.09375,
+                1102.0625
+            ],
+            "StarSystem": "Col 359 Sector DL-V b45-4",
+            "SystemAddress": 9461947246433,
+            "SystemAllegiance": "",
+            "SystemEconomy": "$economy_None;",
+            "SystemGovernment": "$government_None;",
+            "SystemSecondEconomy": "$economy_None;",
+            "SystemSecurity": "$GAlAXY_MAP_INFO_state_anarchy;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:05:30Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:05:31.890222Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "9df1b27d0d1786e2598b63d80f2698bf25e7fd48"
+        },
+        "message": {
+            "Body": "s Eridani",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Factions": [
+                {
+                    "Allegiance": "Empire",
+                    "FactionState": "None",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.194389,
+                    "Name": "s Eridani Empire Group"
+                },
+                {
+                    "Allegiance": "Empire",
+                    "FactionState": "None",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.114228,
+                    "Name": "Fawaol Patrons of Law"
+                },
+                {
+                    "Allegiance": "Empire",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.09018,
+                    "Name": "s Eridani Silver Comms Co"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Communism",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.03006,
+                    "Name": "Workers of s Eridani Worker's Party"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.02004,
+                    "Name": "Family of s Eridani"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.042084,
+                    "Name": "s Eridani Power Systems"
+                },
+                {
+                    "Allegiance": "Empire",
+                    "FactionState": "None",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.509018,
+                    "Name": "Imperial Privateers"
+                }
+            ],
+            "Population": 120140,
+            "StarPos": [
+                57.28125,
+                -115.3125,
+                -15.46875
+            ],
+            "StarSystem": "s Eridani",
+            "SystemAddress": 160224502964,
+            "SystemAllegiance": "Empire",
+            "SystemEconomy": "$economy_Extraction;",
+            "SystemFaction": {
+                "Name": "Imperial Privateers"
+            },
+            "SystemGovernment": "$government_Patronage;",
+            "SystemSecondEconomy": "$economy_Colony;",
+            "SystemSecurity": "$SYSTEM_SECURITY_medium;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:05:30Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:12:16.991824Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "7cfcdd6af6351ccbf1130de39083c0518e460759"
+        },
+        "message": {
+            "Body": "Arine",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Factions": [
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Democracy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.110338,
+                    "Name": "Arine Values Party"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Dictatorship",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.031809,
+                    "Name": "Nationals of Arine"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.047714,
+                    "Name": "Arine Crimson Energy Corporation"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Dictatorship",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.022863,
+                    "Name": "Justice Party of Arine"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Expansion"
+                        }
+                    ],
+                    "Allegiance": "Independent",
+                    "FactionState": "Expansion",
+                    "Government": "Cooperative",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.787276,
+                    "Name": "Canonn",
+                    "RecoveringStates": [
+                        {
+                            "State": "Boom",
+                            "Trend": 0
+                        },
+                        {
+                            "State": "PublicHoliday",
+                            "Trend": 0
+                        }
+                    ]
+                }
+            ],
+            "Population": 6750119,
+            "StarPos": [
+                -143.6875,
+                40.6875,
+                -77.5
+            ],
+            "StarSystem": "Arine",
+            "SystemAddress": 13863215113609,
+            "SystemAllegiance": "Independent",
+            "SystemEconomy": "$economy_Industrial;",
+            "SystemFaction": {
+                "FactionState": "Expansion",
+                "Name": "Canonn"
+            },
+            "SystemGovernment": "$government_Cooperative;",
+            "SystemSecondEconomy": "$economy_Extraction;",
+            "SystemSecurity": "$SYSTEM_SECURITY_medium;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:12:16Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:22:42.396722Z",
+            "softwareName": "EDSM - Console",
+            "softwareVersion": "1.0",
+            "uploaderID": "c13905c5c19789913c887154e1f48e4519cc97bb"
+        },
+        "message": {
+            "Body": "Smojo LJ-F b54-0 A",
+            "BodyID": 1,
+            "BodyType": "Star",
+            "Population": 0,
+            "StarPos": [
+                11960.4375,
+                360.59375,
+                3940.9375
+            ],
+            "StarSystem": "Smojo LJ-F b54-0",
+            "SystemAddress": 831480081361,
+            "SystemAllegiance": "",
+            "SystemEconomy": "$economy_None;",
+            "SystemGovernment": "$government_None;",
+            "SystemSecondEconomy": "$economy_None;",
+            "SystemSecurity": "$GAlAXY_MAP_INFO_state_anarchy;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:19:08Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:26:25.652118Z",
+            "softwareName": "GameGlass",
+            "softwareVersion": "2.2.2",
+            "uploaderID": "7c8b98d240ef4da060cb7abc538341d02f06a6c8"
+        },
+        "message": {
+            "Atmosphere": "",
+            "AtmosphereType": "None",
+            "AxialTilt": 0.272369,
+            "BodyID": 40,
+            "BodyName": "Hypiae Auscs AK-G c24-687 3 a",
+            "Composition": {
+                "Ice": 0.825186,
+                "Metal": 0.015471,
+                "Rock": 0.159343
+            },
+            "DistanceFromArrivalLS": 2771.436622,
+            "Eccentricity": 0.001389,
+            "Landable": true,
+            "MassEM": 0.000549,
+            "Materials": [
+                {
+                    "Name": "sulphur",
+                    "Percent": 26.632183
+                },
+                {
+                    "Name": "carbon",
+                    "Percent": 22.394909
+                },
+                {
+                    "Name": "phosphorus",
+                    "Percent": 14.337605
+                },
+                {
+                    "Name": "iron",
+                    "Percent": 11.903183
+                },
+                {
+                    "Name": "nickel",
+                    "Percent": 9.003069
+                },
+                {
+                    "Name": "chromium",
+                    "Percent": 5.353257
+                },
+                {
+                    "Name": "manganese",
+                    "Percent": 4.915893
+                },
+                {
+                    "Name": "zinc",
+                    "Percent": 3.23484
+                },
+                {
+                    "Name": "molybdenum",
+                    "Percent": 0.777271
+                },
+                {
+                    "Name": "ruthenium",
+                    "Percent": 0.735098
+                },
+                {
+                    "Name": "tin",
+                    "Percent": 0.712702
+                }
+            ],
+            "OrbitalInclination": 0.015848,
+            "OrbitalPeriod": 291271.853447,
+            "Parents": [
+                {
+                    "Planet": 39
+                },
+                {
+                    "Star": 0
+                }
+            ],
+            "Periapsis": 338.106723,
+            "PlanetClass": "Icy body",
+            "Radius": 723620.375,
+            "RotationPeriod": 291275.427946,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 749622780.08461,
+            "StarPos": [
+                2369.25,
+                34.90625,
+                25585.65625
+            ],
+            "StarSystem": "Hypiae Auscs AK-G c24-687",
+            "SurfaceGravity": 0.417944,
+            "SurfacePressure": 0.0,
+            "SurfaceTemperature": 76.11145,
+            "SystemAddress": 188928934061778,
+            "TerraformState": "",
+            "TidalLock": true,
+            "Volcanism": "minor carbon dioxide geysers volcanism",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T23:26:25Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:29:24.210886Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "46c6708220c1816c6c67ca81d335b4cd1286430b"
+        },
+        "message": {
+            "AbsoluteMagnitude": 23.015427,
+            "Age_MY": 3916,
+            "AxialTilt": 0.0,
+            "BodyID": 0,
+            "BodyName": "Crucis Sector BV-P a5-4",
+            "DistanceFromArrivalLS": 0.0,
+            "Luminosity": "V",
+            "Radius": 40093976.0,
+            "RotationPeriod": 22990.894483,
+            "ScanType": "AutoScan",
+            "StarPos": [
+                89.6875,
+                -26.46875,
+                37.8125
+            ],
+            "StarSystem": "Crucis Sector BV-P a5-4",
+            "StarType": "Y",
+            "StellarMass": 0.011719,
+            "Subclass": 4,
+            "SurfaceTemperature": 366.0,
+            "SystemAddress": 75745506249584,
+            "WasDiscovered": true,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T23:29:22Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:29:24.274824Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "2b67a6e0193b5e64cf2bca9e96ecece3e11928e2"
+        },
+        "message": {
+            "BodyID": 7,
+            "BodyName": "Pru Euq JR-C c26-34 A A Belt Cluster 4",
+            "DistanceFromArrivalLS": 5.083412,
+            "Parents": [
+                {
+                    "Ring": 3
+                },
+                {
+                    "Star": 1
+                },
+                {
+                    "Null": 0
+                }
+            ],
+            "ScanType": "AutoScan",
+            "StarPos": [
+                -262.96875,
+                -5.65625,
+                1351.59375
+            ],
+            "StarSystem": "Pru Euq JR-C c26-34",
+            "SystemAddress": 9429298713570,
+            "WasDiscovered": true,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T23:29:23Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:29:25.587456Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "87e00f80a7f7129c4165e12e362aaeaa4f2a4fda"
+        },
+        "message": {
+            "Body": "Khun",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Conflicts": [
+                {
+                    "Faction1": {
+                        "Name": "Khun Independent Governance",
+                        "Stake": "Banks Terminal",
+                        "WonDays": 0
+                    },
+                    "Faction2": {
+                        "Name": "Khun Citizen Party",
+                        "Stake": "",
+                        "WonDays": 0
+                    },
+                    "Status": "active",
+                    "WarType": "civilwar"
+                }
+            ],
+            "Factions": [
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "CivilWar"
+                        }
+                    ],
+                    "Allegiance": "Independent",
+                    "FactionState": "CivilWar",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.081466,
+                    "Name": "Khun Independent Governance",
+                    "RecoveringStates": [
+                        {
+                            "State": "Outbreak",
+                            "Trend": 0
+                        }
+                    ]
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.03055,
+                    "Name": "Khun Crimson Ring"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.046843,
+                    "Name": "Khun Ltd"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Outbreak"
+                        },
+                        {
+                            "State": "CivilLiberty"
+                        },
+                        {
+                            "State": "CivilWar"
+                        }
+                    ],
+                    "Allegiance": "Independent",
+                    "FactionState": "CivilWar",
+                    "Government": "Communism",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.081466,
+                    "Name": "Khun Citizen Party"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Investment"
+                        },
+                        {
+                            "State": "Expansion"
+                        }
+                    ],
+                    "Allegiance": "Independent",
+                    "FactionState": "Expansion",
+                    "Government": "Cooperative",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.717923,
+                    "Name": "Canonn",
+                    "RecoveringStates": [
+                        {
+                            "State": "InfrastructureFailure",
+                            "Trend": 0
+                        }
+                    ]
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.041752,
+                    "Name": "Khun Raiders"
+                }
+            ],
+            "Population": 151935,
+            "StarPos": [
+                -171.59375,
+                19.96875,
+                -56.96875
+            ],
+            "StarSystem": "Khun",
+            "SystemAddress": 3107241104074,
+            "SystemAllegiance": "Independent",
+            "SystemEconomy": "$economy_Terraforming;",
+            "SystemFaction": {
+                "FactionState": "Expansion",
+                "Name": "Canonn"
+            },
+            "SystemGovernment": "$government_Cooperative;",
+            "SystemSecondEconomy": "$economy_Colony;",
+            "SystemSecurity": "$SYSTEM_SECURITY_low;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:29:25Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:29:25.662374Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.7.4.0",
+            "uploaderID": "fe3ff96a3c281dccf7966eda3b5f0a55ac985943"
+        },
+        "message": {
+            "Atmosphere": "",
+            "AtmosphereType": "None",
+            "AxialTilt": -0.265712,
+            "BodyID": 1,
+            "BodyName": "Splojoea SP-W d2-343 1",
+            "Composition": {
+                "Ice": 0.0,
+                "Metal": 0.328208,
+                "Rock": 0.671792
+            },
+            "DistanceFromArrivalLS": 223.461981,
+            "Eccentricity": 0.000304,
+            "Landable": true,
+            "MassEM": 4.226632,
+            "Materials": [
+                {
+                    "Name": "iron",
+                    "Percent": 24.726812
+                },
+                {
+                    "Name": "nickel",
+                    "Percent": 18.702326
+                },
+                {
+                    "Name": "sulphur",
+                    "Percent": 17.535065
+                },
+                {
+                    "Name": "carbon",
+                    "Percent": 14.745174
+                },
+                {
+                    "Name": "phosphorus",
+                    "Percent": 9.440114
+                },
+                {
+                    "Name": "vanadium",
+                    "Percent": 6.072044
+                },
+                {
+                    "Name": "selenium",
+                    "Percent": 2.744386
+                },
+                {
+                    "Name": "arsenic",
+                    "Percent": 2.335796
+                },
+                {
+                    "Name": "cadmium",
+                    "Percent": 1.920149
+                },
+                {
+                    "Name": "mercury",
+                    "Percent": 1.079779
+                },
+                {
+                    "Name": "polonium",
+                    "Percent": 0.698346
+                }
+            ],
+            "OrbitalInclination": -0.021107,
+            "OrbitalPeriod": 7440366.864204,
+            "Parents": [
+                {
+                    "Star": 0
+                }
+            ],
+            "Periapsis": 333.123482,
+            "PlanetClass": "High metal content body",
+            "Radius": 9188642.0,
+            "ReserveLevel": "PristineResources",
+            "Rings": [
+                {
+                    "InnerRad": 31730000.0,
+                    "MassMT": 43023000000.0,
+                    "Name": "Splojoea SP-W d2-343 1 A Ring",
+                    "OuterRad": 66705000.0,
+                    "RingClass": "eRingClass_MetalRich"
+                }
+            ],
+            "RotationPeriod": 7496916.268829,
+            "ScanType": "Detailed",
+            "SemiMajorAxis": 66976230144.5007,
+            "StarPos": [
+                -2575.59375,
+                785.3125,
+                35041.40625
+            ],
+            "StarSystem": "Splojoea SP-W d2-343",
+            "SurfaceGravity": 19.95268,
+            "SurfacePressure": 0.0,
+            "SurfaceTemperature": 561.113098,
+            "SystemAddress": 11795330930459,
+            "TerraformState": "",
+            "TidalLock": true,
+            "Volcanism": "major silicate vapour geysers volcanism",
+            "WasDiscovered": false,
+            "WasMapped": false,
+            "event": "Scan",
+            "timestamp": "2020-10-12T23:29:25Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:38:43.155724Z",
+            "softwareName": "EDDI",
+            "softwareVersion": "3.7.0",
+            "uploaderID": "c0a183d6527e9b0fd31b74927a6f90ecdf5cc925"
+        },
+        "message": {
+            "DistFromStarLS": 474.560398,
+            "MarketID": 3223923968,
+            "StarPos": [
+                29.59375,
+                -42.25,
+                42.125
+            ],
+            "StarSystem": "Ehecatl",
+            "StationEconomies": [
+                {
+                    "Name": "$economy_Agri;",
+                    "Proportion": 1.0
+                }
+            ],
+            "StationEconomy": "$economy_Agri;",
+            "StationFaction": {
+                "Name": "EG Union"
+            },
+            "StationGovernment": "$government_Dictatorship;",
+            "StationName": "Ivanishin Market",
+            "StationServices": [
+                "dock",
+                "autodock",
+                "commodities",
+                "contacts",
+                "exploration",
+                "missions",
+                "outfitting",
+                "crewlounge",
+                "rearm",
+                "refuel",
+                "repair",
+                "shipyard",
+                "tuning",
+                "engineer",
+                "missionsgenerated",
+                "flightcontroller",
+                "stationoperations",
+                "powerplay",
+                "searchrescue",
+                "stationMenu",
+                "shop"
+            ],
+            "StationType": "Coriolis",
+            "SystemAddress": 3932210303706,
+            "event": "Docked",
+            "timestamp": "2020-10-12T23:38:42Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:49:44.100582Z",
+            "softwareName": "EDDiscovery",
+            "softwareVersion": "11.6.2.0",
+            "uploaderID": "8c3c38274af6b2c4d303c1bb7bd1fdf2f74f0909"
+        },
+        "message": {
+            "DistFromStarLS": 1439.001947,
+            "MarketID": 3221680896,
+            "StarPos": [
+                -153.8125,
+                -70.875,
+                -24.9375
+            ],
+            "StarSystem": "Tsao Chun",
+            "StationAllegiance": "Federation",
+            "StationEconomies": [
+                {
+                    "Name": "$economy_Refinery;",
+                    "Proportion": 1.0
+                }
+            ],
+            "StationEconomy": "$economy_Refinery;",
+            "StationFaction": {
+                "Name": "Union of Tsao Chun Confederation"
+            },
+            "StationGovernment": "$government_Confederacy;",
+            "StationName": "Thomas Point",
+            "StationServices": [
+                "dock",
+                "autodock",
+                "blackmarket",
+                "commodities",
+                "contacts",
+                "exploration",
+                "missions",
+                "outfitting",
+                "crewlounge",
+                "rearm",
+                "refuel",
+                "engineer",
+                "missionsgenerated",
+                "facilitator",
+                "flightcontroller",
+                "stationoperations",
+                "powerplay",
+                "searchrescue",
+                "stationMenu"
+            ],
+            "StationType": "Outpost",
+            "SystemAddress": 5581142168274,
+            "event": "Docked",
+            "timestamp": "2020-10-12T23:49:43Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:51:35.282898Z",
+            "softwareName": "EliteLogAgent",
+            "softwareVersion": "1.3.4.619",
+            "uploaderID": "243162de842295718b16ff921fe16af4d1d8a772"
+        },
+        "message": {
+            "Body": "HR 2439",
+            "BodyID": 0,
+            "BodyType": "Star",
+            "Factions": [
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.071639,
+                    "Name": "BD+24 1451 Major Corporation"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.178606,
+                    "Name": "HR 2439 Energy Company"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Confederacy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.1158,
+                    "Name": "Bero Confederation"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Confederacy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.1158,
+                    "Name": "Confederacy of Jeticans"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.367027,
+                    "Name": "GCRV 4259 Limited",
+                    "PendingStates": [
+                        {
+                            "State": "Boom",
+                            "Trend": 0
+                        }
+                    ],
+                    "RecoveringStates": [
+                        {
+                            "State": "Expansion",
+                            "Trend": 0
+                        }
+                    ]
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Confederacy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.1158,
+                    "Name": "HR 2439 Alliance"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.035329,
+                    "Name": "HR 2439 Cartel"
+                }
+            ],
+            "Population": 22319,
+            "StarPos": [
+                18.1875,
+                16.90625,
+                -104.0
+            ],
+            "StarSystem": "HR 2439",
+            "SystemAddress": 2106438191459,
+            "SystemAllegiance": "Federation",
+            "SystemEconomy": "$economy_Refinery;",
+            "SystemFaction": {
+                "Name": "GCRV 4259 Limited"
+            },
+            "SystemGovernment": "$government_Corporate;",
+            "SystemSecondEconomy": "$economy_None;",
+            "SystemSecurity": "$SYSTEM_SECURITY_low;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:51:34Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:54:39.056402Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "b3ebc1db58ae3b01efc6173f08f8ca79da9115d5"
+        },
+        "message": {
+            "Body": "Zelada 10 b",
+            "BodyType": "Planet",
+            "DistFromStarLS": 2198.264489,
+            "MarketID": 3531732480,
+            "StarPos": [
+                -58.875,
+                -21.53125,
+                -54.84375
+            ],
+            "StarSystem": "Zelada",
+            "StationEconomies": [
+                {
+                    "Name": "$economy_Colony;",
+                    "Proportion": 1.0
+                }
+            ],
+            "StationEconomy": "$economy_Colony;",
+            "StationFaction": {
+                "FactionState": "Expansion",
+                "Name": "Aseveljet"
+            },
+            "StationGovernment": "$government_Cooperative;",
+            "StationName": "Gotlieb Relay",
+            "StationServices": [
+                "dock",
+                "autodock",
+                "blackmarket",
+                "commodities",
+                "contacts",
+                "exploration",
+                "missions",
+                "outfitting",
+                "crewlounge",
+                "rearm",
+                "refuel",
+                "repair",
+                "tuning",
+                "engineer",
+                "missionsgenerated",
+                "facilitator",
+                "flightcontroller",
+                "stationoperations",
+                "powerplay",
+                "searchrescue",
+                "stationMenu",
+                "shop"
+            ],
+            "StationType": "CraterOutpost",
+            "SystemAddress": 670149125521,
+            "event": "Docked",
+            "timestamp": "2020-10-12T23:54:37Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:55:42.876900Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "b75eee907dc99c1bce7977a73717694e31e4245f"
+        },
+        "message": {
+            "Body": "BD+34 1378 A",
+            "BodyID": 1,
+            "BodyType": "Star",
+            "Factions": [
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Democracy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.090452,
+                    "Name": "Revolutionary BD+34 1378 Future"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.119598,
+                    "Name": "BD+34 1378 Universal & Co"
+                },
+                {
+                    "Allegiance": "Federation",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.072362,
+                    "Name": "GCRV 4259 Limited",
+                    "RecoveringStates": [
+                        {
+                            "State": "Expansion",
+                            "Trend": 0
+                        }
+                    ]
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.01005,
+                    "Name": "BD+34 1378 Gold Pirates"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Dictatorship",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.039196,
+                    "Name": "New BD+34 1378 Conservatives"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Democracy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.633166,
+                    "Name": "Caballeros de Sion"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.035176,
+                    "Name": "BD+34 1378 Natural Interstellar"
+                }
+            ],
+            "Population": 625443339,
+            "PowerplayState": "Exploited",
+            "Powers": [
+                "Edmund Mahon"
+            ],
+            "StarPos": [
+                0.1875,
+                19.8125,
+                -93.90625
+            ],
+            "StarSystem": "BD+34 1378",
+            "SystemAddress": 670954562945,
+            "SystemAllegiance": "Independent",
+            "SystemEconomy": "$economy_Agri;",
+            "SystemFaction": {
+                "Name": "Caballeros de Sion"
+            },
+            "SystemGovernment": "$government_Democracy;",
+            "SystemSecondEconomy": "$economy_Tourism;",
+            "SystemSecurity": "$SYSTEM_SECURITY_medium;",
+            "event": "FSDJump",
+            "timestamp": "2020-10-12T23:55:41Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-12T23:57:24.738580Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "d00b720a34b70aab46d38009d5b9ec589eeae36d"
+        },
+        "message": {
+            "BodyID": 6,
+            "BodyName": "Kao Jundji A 1",
+            "Signals": [
+                {
+                    "Count": 18,
+                    "Type": "$SAA_SignalType_Geological;"
+                },
+                {
+                    "Count": 2,
+                    "Type": "$SAA_SignalType_Human;"
+                }
+            ],
+            "StarPos": [
+                111.8125,
+                -193.1875,
+                97.125
+            ],
+            "StarSystem": "Kao Jundji",
+            "SystemAddress": 2003375704435,
+            "event": "SAASignalsFound",
+            "timestamp": "2020-10-10T06:42:17Z"
+        }
+    },
+    {
+        "$schemaRef": "https://eddn.edcd.io/schemas/journal/1",
+        "header": {
+            "gatewayTimestamp": "2020-10-13T00:01:37.016085Z",
+            "softwareName": "E:D Market Connector [Windows]",
+            "softwareVersion": "4.1.3",
+            "uploaderID": "d00b720a34b70aab46d38009d5b9ec589eeae36d"
+        },
+        "message": {
+            "Body": "Kangulu 12 a",
+            "BodyID": 21,
+            "BodyType": "Planet",
+            "Conflicts": [
+                {
+                    "Faction1": {
+                        "Name": "Machaquiaba Imperial Society",
+                        "Stake": "Wilson Penal colony",
+                        "WonDays": 0
+                    },
+                    "Faction2": {
+                        "Name": "Labour of Kangulu",
+                        "Stake": "",
+                        "WonDays": 0
+                    },
+                    "Status": "active",
+                    "WarType": "war"
+                },
+                {
+                    "Faction1": {
+                        "Name": "Kartamoan Transport Services",
+                        "Stake": "Barlowe Hub",
+                        "WonDays": 0
+                    },
+                    "Faction2": {
+                        "Name": "Kangulu Electronics Inc",
+                        "Stake": "",
+                        "WonDays": 3
+                    },
+                    "Status": "active",
+                    "WarType": "election"
+                }
+            ],
+            "Docked": false,
+            "Factions": [
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Boom"
+                        }
+                    ],
+                    "Allegiance": "Empire",
+                    "FactionState": "Boom",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.50544,
+                    "Name": "HIP 1914 Imperial Society"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "War"
+                        }
+                    ],
+                    "Allegiance": "Empire",
+                    "FactionState": "War",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.091988,
+                    "Name": "Machaquiaba Imperial Society"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Election"
+                        }
+                    ],
+                    "Allegiance": "Empire",
+                    "FactionState": "Election",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.125618,
+                    "Name": "Kartamoan Transport Services"
+                },
+                {
+                    "Allegiance": "Empire",
+                    "FactionState": "None",
+                    "Government": "Patronage",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.049456,
+                    "Name": "Kangulu Empire Consulate"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "Election"
+                        }
+                    ],
+                    "Allegiance": "Empire",
+                    "FactionState": "Election",
+                    "Government": "Corporate",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.125618,
+                    "Name": "Kangulu Electronics Inc"
+                },
+                {
+                    "ActiveStates": [
+                        {
+                            "State": "War"
+                        }
+                    ],
+                    "Allegiance": "Independent",
+                    "FactionState": "War",
+                    "Government": "Democracy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.091988,
+                    "Name": "Labour of Kangulu"
+                },
+                {
+                    "Allegiance": "Independent",
+                    "FactionState": "None",
+                    "Government": "Anarchy",
+                    "Happiness": "$Faction_HappinessBand2;",
+                    "Influence": 0.009891,
+                    "Name": "Kangulu Pirates"
+                }
+            ],
+            "Population": 186876,
+            "PowerplayState": "Exploited",
+            "Powers": [
+                "Aisling Duval"
+            ],
+            "StarPos": [
+                142.875,
+                -159.53125,
+                104.5625
+            ],
+            "StarSystem": "Kangulu",
+            "SystemAddress": 2871856276945,
+            "SystemAllegiance": "Empire",
+            "SystemEconomy": "$economy_Refinery;",
+            "SystemFaction": {
+                "FactionState": "Boom",
+                "Name": "HIP 1914 Imperial Society"
+            },
+            "SystemGovernment": "$government_Patronage;",
+            "SystemSecondEconomy": "$economy_Military;",
+            "SystemSecurity": "$SYSTEM_SECURITY_medium;",
+            "event": "Location",
+            "timestamp": "2020-10-11T06:05:57Z"
+        }
+    }
+]
