@@ -14,6 +14,8 @@ namespace EDDNConsumerCore
 {
     class Program
     {
+        private static readonly string _environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+
         static async Task Main(string[] args)
         {
             var builder = new HostBuilder();
@@ -35,6 +37,7 @@ namespace EDDNConsumerCore
                 })
                 .ConfigureAppConfiguration((host, config) => {
                     config.AddJsonFile($"appsettings.json", true, true);
+                    config.AddJsonFile($"appsettings.{_environment}.json", true, true);
                     config.AddUserSecrets<Program>(true, true);
                     config.AddEnvironmentVariables();
                 });

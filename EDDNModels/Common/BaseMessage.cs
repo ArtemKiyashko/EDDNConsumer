@@ -5,7 +5,7 @@ using System.Text;
 
 namespace EDDNModels.Common
 {
-    public abstract class BaseMessage
+    public class BaseMessage
     {
 
         [JsonProperty("timestamp")]

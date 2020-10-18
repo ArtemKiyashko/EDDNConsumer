@@ -19,7 +19,7 @@ namespace JournalContributor
                 collectionName: "Systems",
                 ConnectionStringSetting = "CosmosDBConnectionString",
                 CreateIfNotExists = true,
-                CollectionThroughput = 400,
+                CollectionThroughput = 50,
                 PartitionKey = "/BodyType")]
             out JournalMessage systemDocument)
         {
