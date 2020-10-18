@@ -14,8 +14,23 @@ namespace EDDNModels.Journal
     /// Contains all properties from the listed events in the client's journal minus Localised
     /// strings and the properties marked below as 'disallowed'
     /// </summary>
+    [JsonObject(ItemNullValueHandling = NullValueHandling.Ignore)]
     public partial class JournalMessage : BaseMessage
     {
+        [JsonProperty("id")]
+        public override string Id
+        {
+            get => Event switch
+            {
+                JournalEvent.FsdJump => StarSystem,
+                JournalEvent.Scan => BodyName,
+                JournalEvent.Docked => StationName,
+                JournalEvent.Location => BodyName,
+                JournalEvent.CarrierJump => StarSystem,
+                _ => $"UnknownID_{Guid.NewGuid()}"
+            };
+        }
+
         [JsonProperty("event")]
         public JournalEvent Event { get; set; }
 

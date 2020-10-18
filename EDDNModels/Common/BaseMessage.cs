@@ -5,10 +5,12 @@ using System.Text;
 
 namespace EDDNModels.Common
 {
-    public class BaseMessage
+    public abstract class BaseMessage
     {
 
         [JsonProperty("timestamp")]
         public DateTimeOffset Timestamp { get; set; }
+        [JsonProperty("id")]
+        public virtual string Id { get; set; }
     }
 }

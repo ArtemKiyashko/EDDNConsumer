@@ -2,9 +2,8 @@ using System;
 using EDDNModels.Common;
 using EDDNModels.Journal;
 using Microsoft.Azure.WebJobs;
-using Microsoft.Azure.WebJobs.Host;
 using Microsoft.Extensions.Logging;
-using SharedLibrary.Extensions;
+using Newtonsoft.Json;
 
 namespace JournalContributor
 {
@@ -13,9 +12,27 @@ namespace JournalContributor
         [FunctionName("ContributeJournal")]
         public static void Run(
             [QueueTrigger("journal", Connection = "AzureWebJobsStorage")]
-            Entity<JournalMessage> myQueueItem, ILogger log)
+            Entity<JournalMessage> myQueueItem,
+            ILogger log,
+            [CosmosDB(
+                databaseName: "EDDN",
+                collectionName: "Systems",
+                ConnectionStringSetting = "CosmosDBConnectionString",
+                CreateIfNotExists = true,
+                CollectionThroughput = 400,
+                PartitionKey = "/BodyType")]
+            out JournalMessage systemDocument)
         {
-            log.LogInformation($"C# Queue trigger function processed: {myQueueItem}");
+            systemDocument = null;
+            switch (myQueueItem.Message.Event)
+            {
+                case JournalEvent.FsdJump:
+                    systemDocument = myQueueItem.Message;
+                    break;
+                default:
+                    log.LogError($"Unknown Journal Event: {JsonConvert.SerializeObject(myQueueItem)}");
+                    break;
+            }
         }
     }
 }
