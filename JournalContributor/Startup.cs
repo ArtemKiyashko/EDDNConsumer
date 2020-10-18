@@ -14,14 +14,7 @@ namespace JournalContributor
     {
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            //builder.Services
-            //    .AddMvcCore()
-            //    .AddJsonFormatters()
-            //    .AddJsonOptions(options =>
-            //    {
-            //        options.SerializerSettings.NullValueHandling = NullValueHandling.Ignore;
-            //        options.SerializerSettings.MissingMemberHandling = MissingMemberHandling.Ignore;
-            //    });
+
         }
     }
 }
