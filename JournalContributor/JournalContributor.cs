@@ -1,37 +1,39 @@
 using System;
+using System.Threading.Tasks;
 using EDDNModels.Common;
 using EDDNModels.Journal;
+using JournalContributor.EventProcessors;
+using Microsoft.Azure.Cosmos;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 
 namespace JournalContributor
 {
-    public static class JournalContributor
+    public class JournalContributor
     {
+        private readonly IEventTypeProcessorFactory _eventTypeProcessorFactory;
+
+        public JournalContributor(IEventTypeProcessorFactory eventTypeProcessorFactory)
+        {
+            _eventTypeProcessorFactory = eventTypeProcessorFactory;
+        }
+
         [FunctionName("ContributeJournal")]
-        public static void Run(
+        public async Task Run(
             [QueueTrigger("journal", Connection = "AzureWebJobsStorage")]
             Entity<JournalMessage> myQueueItem,
-            ILogger log,
-            [CosmosDB(
-                databaseName: "EDDN",
-                collectionName: "Systems",
-                ConnectionStringSetting = "CosmosDBConnectionString",
-                CreateIfNotExists = true,
-                CollectionThroughput = 50,
-                PartitionKey = "/BodyType")]
-            out JournalMessage systemDocument)
+            ILogger log)
         {
-            systemDocument = null;
-            switch (myQueueItem.Message.Event)
+            try
             {
-                case JournalEvent.FsdJump:
-                    systemDocument = myQueueItem.Message;
-                    break;
-                default:
-                    log.LogError($"Unknown Journal Event: {JsonConvert.SerializeObject(myQueueItem)}");
-                    break;
+                var eventProcessor = _eventTypeProcessorFactory.GetProcessor(myQueueItem.Message);
+                await eventProcessor.ProcessEventAsync(myQueueItem.Message);
+            }
+            catch(Exception ex)
+            {
+                log.LogError(ex, $"Error processing queue item: {JsonConvert.SerializeObject(myQueueItem)}");
+                throw;
             }
         }
     }

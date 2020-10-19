@@ -27,6 +27,7 @@ namespace EDDNModels.Journal
                 JournalEvent.Docked => StationName,
                 JournalEvent.Location => BodyName,
                 JournalEvent.CarrierJump => StarSystem,
+                JournalEvent.SaaSignalsFound => BodyName,
                 _ => $"UnknownID_{Guid.NewGuid()}"
             };
         }
@@ -77,7 +78,7 @@ namespace EDDNModels.Journal
         public double? RotationPeriod { get; set; }
 
         [JsonProperty("ScanType")]
-        public string ScanType { get; set; }
+        public ScanType ScanType { get; set; }
 
         [JsonProperty("SemiMajorAxis")]
         public double? SemiMajorAxis { get; set; }
