@@ -28,9 +28,11 @@ namespace JournalContributor.EventProcessors
 
         public async Task ProcessEventAsync(JournalMessage message)
         {
-            var existingItem = await message.CheckIfItemExists(_bodiesContainer, _options.BodiesCollection.PartitionKey);
+            var existingItem = await message.CheckIfItemExists(_bodiesContainer, message.StarSystem);
             if (existingItem == null)
-                await _bodiesContainer.UpsertItemAsync(message);
+            {
+                await _bodiesContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem));
+            }
             else
             {
                 //Basic scan type contains less information then others.
@@ -42,7 +44,9 @@ namespace JournalContributor.EventProcessors
                     existingItem.ScanType == ScanType.Detailed)
                     return;
                 else
-                    await _bodiesContainer.UpsertItemAsync(message);
+                {
+                    await _bodiesContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem));
+                }
             }
         }
     }
