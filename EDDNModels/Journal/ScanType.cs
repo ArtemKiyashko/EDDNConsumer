@@ -10,9 +10,9 @@ namespace EDDNModels.Journal
     public enum ScanType
     {
         Basic,
-        Detailed,
+        AutoScan,
         NavBeacon,
         NavBeaconDetail,
-        AutoScan
+        Detailed
     }
 }

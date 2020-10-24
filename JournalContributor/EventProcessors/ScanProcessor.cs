@@ -28,25 +28,36 @@ namespace JournalContributor.EventProcessors
 
         public async Task ProcessEventAsync(JournalMessage message)
         {
-            var existingItem = await message.CheckIfItemExists(_bodiesContainer, message.StarSystem);
-            if (existingItem == null)
-            {
-                await _bodiesContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem));
-            }
+            var existingItemResponse = await message.CheckIfItemExists(_bodiesContainer, message.StarSystem);
+            if (existingItemResponse == null)
+                await CreateItem(message);
             else
+                await UpdateItem(message, existingItemResponse);
+        }
+
+        private async Task CreateItem(JournalMessage message)
+        {
+            try
             {
-                //Basic scan type contains less information then others.
-                //We`re skipping item upsert if remote item has scan type higher then Basic
-                //We`re also skippings if remote item scan type is Detailed (as it`s a maximum info scan)
-                //Will update item if both (remote and current) have scan type Basic
-                //And will upsert item in case of current item have higher scan type then remote
-                if ((message.ScanType == ScanType.Basic && existingItem.ScanType != ScanType.Basic) ||
-                    existingItem.ScanType == ScanType.Detailed)
-                    return;
-                else
-                {
-                    await _bodiesContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem));
-                }
+                await _bodiesContainer.CreateItemAsync(message, new PartitionKey(message.StarSystem));
+            }
+            catch (CosmosException ex) when (ex.StatusCode == System.Net.HttpStatusCode.Conflict)
+            {
+                await ProcessEventAsync(message);
+            }
+        }
+
+        private async Task UpdateItem(JournalMessage message, ItemResponse<JournalMessage> existingItemResponse)
+        {
+            if (message.ScanType <= existingItemResponse.Resource.ScanType)
+                return;
+            try
+            {
+                await _bodiesContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem), new ItemRequestOptions { IfMatchEtag = existingItemResponse.ETag });
+            }
+            catch (CosmosException ex) when (ex.StatusCode == System.Net.HttpStatusCode.PreconditionFailed)
+            {
+                await ProcessEventAsync(message);
             }
         }
     }

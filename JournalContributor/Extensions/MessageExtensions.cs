@@ -9,13 +9,12 @@ namespace JournalContributor.Extensions
 {
     public static class MessageExtensions
     {
-        public static async Task<T> CheckIfItemExists<T>(this T item, Container container, string partitionKey)
+        public static async Task<ItemResponse<T>> CheckIfItemExists<T>(this T item, Container container, string partitionKey)
             where T : BaseMessage
         {
             try
             {
-                var currentResult = await container.ReadItemAsync<T>(item.Id, new PartitionKey(partitionKey));
-                return currentResult.Resource;
+                return await container.ReadItemAsync<T>(item.Id, new PartitionKey(partitionKey));
             }
             catch (CosmosException ex) when (ex.StatusCode == System.Net.HttpStatusCode.NotFound)
             {
