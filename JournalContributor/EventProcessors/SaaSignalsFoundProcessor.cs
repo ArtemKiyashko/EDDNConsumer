@@ -27,7 +27,7 @@ namespace JournalContributor.EventProcessors
 
         public async Task ProcessEventAsync(JournalMessage message)
         {
-            await _signalsContainer.UpsertItemAsync(message, new PartitionKey(message.BodyName));
+            await _signalsContainer.UpsertItemAsync(message, new PartitionKey(message.StarSystem));
         }
     }
 }
