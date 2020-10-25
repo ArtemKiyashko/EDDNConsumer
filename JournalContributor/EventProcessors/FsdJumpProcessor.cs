@@ -1,4 +1,6 @@
-﻿using EDDNModels.Journal;
+﻿using EDDNModels.Extensions;
+using EDDNModels.Journal;
+using JournalContributor.Extensions;
 using JournalContributor.Settings;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
@@ -27,7 +29,8 @@ namespace JournalContributor.EventProcessors
 
         public async Task ProcessEventAsync(JournalMessage message)
         {
-            await _systemsContainer.UpsertItemAsync(message);
+            message.Region = RegionMap.FindRegion(message.StarPos[0], message.StarPos[1], message.StarPos[2]);
+            await _systemsContainer.UpsertItemAsync(message, message.Region == null ? PartitionKey.None : new PartitionKey(message.Region.Name));
         }
     }
 }

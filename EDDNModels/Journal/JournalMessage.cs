@@ -32,6 +32,9 @@ namespace EDDNModels.Journal
             };
         }
 
+        [JsonProperty("Region")]
+        public Region Region { get; set; }
+
         [JsonProperty("event")]
         public JournalEvent Event { get; set; }
 
