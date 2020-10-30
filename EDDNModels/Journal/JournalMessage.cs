@@ -1,4 +1,5 @@
 ﻿using EDDNModels.Common;
+using EDDNModels.Extensions;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -126,6 +127,7 @@ namespace EDDNModels.Journal
         public string SystemSecondEconomy { get; set; }
 
         [JsonProperty("SystemFaction")]
+        [JsonConverter(typeof(SystemFactionConverter))]
         public SystemFaction SystemFaction { get; set; }
 
         [JsonProperty("SystemSecurity")]
