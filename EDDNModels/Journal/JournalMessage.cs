@@ -246,6 +246,7 @@ namespace EDDNModels.Journal
         public string StationEconomy { get; set; }
 
         [JsonProperty("StationFaction")]
+        [JsonConverter(typeof(StationFactionConverter))]
         public StationFaction StationFaction { get; set; }
 
         [JsonProperty("StationGovernment")]
