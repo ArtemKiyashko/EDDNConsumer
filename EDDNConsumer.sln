@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JournalContributor", "Journ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{A4A7E9EF-9F5B-4CCF-8FBA-DDA69539DCA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JournalContributorEventHub", "JournalContributorEventHub\JournalContributorEventHub.csproj", "{09C214F1-3C07-48AB-9D7F-D0117D694D00}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{A4A7E9EF-9F5B-4CCF-8FBA-DDA69539DCA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A7E9EF-9F5B-4CCF-8FBA-DDA69539DCA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A7E9EF-9F5B-4CCF-8FBA-DDA69539DCA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C214F1-3C07-48AB-9D7F-D0117D694D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C214F1-3C07-48AB-9D7F-D0117D694D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C214F1-3C07-48AB-9D7F-D0117D694D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C214F1-3C07-48AB-9D7F-D0117D694D00}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
