@@ -24,11 +24,8 @@ namespace EDDNConsumerCore
             builder
                 .ConfigureServices((host, services) => {
                     services.AddHostedService<ConsumerService>();
-                    services.AddTransient<IMessageDistributor, MessageDistributor>();
-                    services.Configure<StorageAccount>(host.Configuration.GetSection("StorageAccount"));
-                    services.ConfigureQueueMappingDictionary<QueueMapping>(host.Configuration.GetSection("QueueMapping"));
                     services.Configure<EddnClientSettings>(host.Configuration.GetSection("EddnClientSettings"));
-                    services.AddSingleton<IMessageQueueFactory, MessageQueueFactory>();
+                    services.ConfigureQueueServices(host.Configuration);
                 })
                 .ConfigureWebJobs(wbuilder => wbuilder.AddAzureStorageCoreServices())
                 .ConfigureLogging(lbuilder => {
