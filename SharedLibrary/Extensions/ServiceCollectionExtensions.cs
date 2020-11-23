@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace EDDNConsumerCore.Extensions
+namespace SharedLibrary.Extensions
 {
     public static class ServiceCollectionExtensions
     {

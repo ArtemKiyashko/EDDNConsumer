@@ -5,6 +5,7 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using NetMQ;
 using NetMQ.Sockets;
+using SharedLibrary.Infrastructure;
 using System;
 using System.Text;
 using System.Threading;

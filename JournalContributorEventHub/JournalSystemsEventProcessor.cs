@@ -3,16 +3,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using EDDNModels.Journal;
 using Microsoft.Azure.EventHubs;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Extensions.Logging;
 
-namespace JournalContributorEventHub
+namespace JournalSystemsEventProcessor
 {
-    public static class JournalContributorEventHub
+    public class JournalSystemsEventProcessor
     {
+        public JournalSystemsEventProcessor()
+        {
+        }
+
         [FunctionName("ContributeJournal")]
-        public static async Task Run([EventHubTrigger("journal", Connection = "")] EventData[] events, ILogger log)
+        public async Task Run([EventHubTrigger("journal", Connection = "")] EventData[] events, ILogger log)
         {
             var exceptions = new List<Exception>();
 

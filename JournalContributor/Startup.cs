@@ -28,7 +28,7 @@ namespace JournalContributor
                 .AddJsonFile(Path.Combine(builder.GetContext().ApplicationRootPath, $"appsettings.{ENVIRONMENT}.json"), optional: true, reloadOnChange: true)
                 .Build();
 
-            builder.Services.AddSingleton<CosmosClient>(factory => new CosmosClient(COSMOS_CONNECTION_STRING));
+            builder.Services.AddSingleton<CosmosClient>(_ => new CosmosClient(COSMOS_CONNECTION_STRING));
             builder.Services.AddSingleton<IEventTypeProcessorFactory, EventTypeProcessorFactory>();
             builder.Services.AddTransient<FsdJumpProcessor>();
             builder.Services.AddTransient<ScanProcessor>();

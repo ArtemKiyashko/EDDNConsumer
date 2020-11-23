@@ -8,7 +8,9 @@ using Azure.Storage.Queues;
 using EDDNConsumerCore.Settings;
 using Newtonsoft.Json;
 using System.Collections.Generic;
-using EDDNConsumerCore.Extensions;
+using SharedLibrary.Infrastructure;
+using SharedLibrary.Extensions;
+using SharedLibrary.Settings;
 
 namespace EDDNConsumerCore
 {

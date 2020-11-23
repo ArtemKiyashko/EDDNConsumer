@@ -1,5 +1,4 @@
-﻿using EDDNConsumerCore.Settings;
-using EDDNModels.Common;
+﻿using EDDNModels.Common;
 using EDDNModels.Journal;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -12,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using SharedLibrary.Extensions;
 
-namespace EDDNConsumerCore
+namespace SharedLibrary.Infrastructure
 {
     public class MessageDistributor : IMessageDistributor
     {
