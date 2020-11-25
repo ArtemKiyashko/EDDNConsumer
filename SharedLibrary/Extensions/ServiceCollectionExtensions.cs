@@ -40,9 +40,10 @@ namespace SharedLibrary.Extensions
         {
             services.Configure<CosmosDbSettings>(config.GetSection("CosmosDbSettings"));
             services.Configure<CosmosClientOptions>(config.GetSection("CosmosDbSettings"));
-            services.AddSingleton<CosmosClient>(provider => new CosmosClient(
-                Environment.GetEnvironmentVariable("CosmosDBConnectionString"),
-                provider.GetService<IOptions<CosmosClientOptions>>().Value));
+            services.AddSingleton<CosmosClient>(provider =>
+                new CosmosClient(
+                    Environment.GetEnvironmentVariable("CosmosDBConnectionString"),
+                    provider.GetService<IOptions<CosmosClientOptions>>().Value));
             services.AddSingleton<ICosmosDb, CosmosDb>();
             return services;
         }

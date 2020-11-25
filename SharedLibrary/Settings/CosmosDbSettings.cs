@@ -14,20 +14,6 @@ namespace SharedLibrary.Settings
         public CollectionSettings StationsCollection { get; set; }
         public CollectionSettings SignalsCollection { get; set; }
         public bool AllowBulkExecution { get; set; }
-        [JsonIgnore]
-        public TimeSpan RequestTimeout {
-            get
-            {
-                return TimeSpan.FromSeconds(_requestTimeout);
-            }
-            set
-            {
-                _requestTimeout = value.Seconds;
-            }
-        }
-
-        [JsonProperty("RequestTimeout")]
-        [DefaultValue(60)]
-        private int _requestTimeout { get; set; }
+        public TimeSpan RequestTimeout { get; set; }
     }
 }
