@@ -1,5 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using Microsoft.Azure.Cosmos;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Options;
 using SharedLibrary.Infrastructure;
 using SharedLibrary.Settings;
 using System;
@@ -31,6 +33,17 @@ namespace SharedLibrary.Extensions
             services.Configure<StorageAccount>(config.GetSection("StorageAccount"));
             services.ConfigureQueueMappingDictionary<QueueMapping>(config.GetSection("QueueMapping"));
             services.AddSingleton<IMessageQueueFactory, MessageQueueFactory>();
+            return services;
+        }
+
+        public static IServiceCollection ConfigureCosmosServices(this IServiceCollection services, IConfiguration config)
+        {
+            services.Configure<CosmosDbSettings>(config.GetSection("CosmosDbSettings"));
+            services.Configure<CosmosClientOptions>(config.GetSection("CosmosDbSettings"));
+            services.AddSingleton<CosmosClient>(provider => new CosmosClient(
+                Environment.GetEnvironmentVariable("CosmosDBConnectionString"),
+                provider.GetService<IOptions<CosmosClientOptions>>().Value));
+            services.AddSingleton<ICosmosDb, CosmosDb>();
             return services;
         }
     }

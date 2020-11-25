@@ -1,7 +1,8 @@
 ﻿using EDDNModels.Journal;
-using JournalContributor.Settings;
 using Microsoft.Azure.Cosmos;
 using Microsoft.Extensions.Options;
+using SharedLibrary.Infrastructure;
+using SharedLibrary.Settings;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,10 +19,10 @@ namespace JournalContributor.EventProcessors
         private readonly Container _signalsContainer;
         private readonly CosmosDbSettings _options;
 
-        public SaaSignalsFoundProcessor(CosmosClient cosmosClient, IOptions<CosmosDbSettings> options)
+        public SaaSignalsFoundProcessor(ICosmosDb cosmosDb)
         {
-            _cosmosClient = cosmosClient;
-            _options = options.Value;
+            _cosmosClient = cosmosDb.Client;
+            _options = cosmosDb.Options.Value;
             _signalsContainer = _cosmosClient.GetContainer(_options.DbName, _options.SignalsCollection.Name);
         }
 

@@ -1,7 +1,7 @@
 ﻿using EDDNModels.Journal;
-using JournalContributor.Settings;
 using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
+using SharedLibrary.Infrastructure;
+using SharedLibrary.Settings;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -18,10 +18,10 @@ namespace JournalContributor.EventProcessors
         private readonly CosmosClient _cosmosClient;
         private readonly Container _stationsContainer;
         private readonly CosmosDbSettings _options;
-        public DockedProcessor(CosmosClient cosmosClient, IOptions<CosmosDbSettings> options)
+        public DockedProcessor(ICosmosDb cosmosDb)
         {
-            _cosmosClient = cosmosClient;
-            _options = options.Value;
+            _cosmosClient = cosmosDb.Client;
+            _options = cosmosDb.Options.Value;
             _stationsContainer = _cosmosClient.GetContainer(_options.DbName, _options.StationsCollection.Name);
         }
 

@@ -1,9 +1,8 @@
 ﻿using EDDNModels.Extensions;
 using EDDNModels.Journal;
-using JournalContributor.Extensions;
-using JournalContributor.Settings;
 using Microsoft.Azure.Cosmos;
-using Microsoft.Extensions.Options;
+using SharedLibrary.Infrastructure;
+using SharedLibrary.Settings;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -20,10 +19,10 @@ namespace JournalContributor.EventProcessors
         private readonly Container _systemsContainer;
         private readonly CosmosDbSettings _options;
 
-        public FsdJumpProcessor(CosmosClient cosmosClient, IOptions<CosmosDbSettings> options)
+        public FsdJumpProcessor(ICosmosDb cosmosDb)
         {
-            _cosmosClient = cosmosClient;
-            _options = options.Value;
+            _cosmosClient = cosmosDb.Client;
+            _options = cosmosDb.Options.Value;
             _systemsContainer = _cosmosClient.GetContainer(_options.DbName, _options.SystemsCollection.Name);
         }
 

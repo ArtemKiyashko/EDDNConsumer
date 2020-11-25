@@ -4,6 +4,7 @@ using Microsoft.Azure.Documents.Client;
 using Microsoft.Azure.Functions.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using SharedLibrary.Extensions;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -29,8 +30,11 @@ namespace JournalSystemsEventProcessor
 
             builder.Services.AddSingleton<CosmosClient>(_ =>
                 new CosmosClient(COSMOS_CONNECTION_STRING, new CosmosClientOptions() {
-                    AllowBulkExecution = true
+                    AllowBulkExecution = true,
+                    RequestTimeout = TimeSpan.FromSeconds(90)
                 }));
+            builder.Services.ConfigureQueueServices(_functionConfig);
+            builder.Services.ConfigureCosmosServices(_functionConfig);
         }
     }
 }
