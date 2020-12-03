@@ -35,8 +35,7 @@ namespace EDDNConsumerCore
                         .SetMinimumLevel(LogLevel.Warning);
                 })
                 .ConfigureAppConfiguration((host, config) => {
-                    config.AddJsonFile($"appsettings.json", true, true);
-                    config.AddJsonFile($"appsettings.{_environment}.json", true, true);
+                    config.AddJsonConfigs();
                     config.AddUserSecrets<Program>(true, true);
                     config.AddEnvironmentVariables();
                 });

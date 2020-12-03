@@ -23,10 +23,7 @@ namespace JournalSystemsEventProcessor
 
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            _functionConfig = new ConfigurationBuilder()
-                .AddJsonFile(Path.Combine(builder.GetContext().ApplicationRootPath, "appsettings.json"), optional: true, reloadOnChange: true)
-                .AddJsonFile(Path.Combine(builder.GetContext().ApplicationRootPath, $"appsettings.{ENVIRONMENT}.json"), optional: true, reloadOnChange: true)
-                .Build();
+            _functionConfig = new ConfigurationBuilder().AddJsonConfigs(builder).Build();
 
             builder.Services.AddSingleton<CosmosClient>(_ =>
                 new CosmosClient(COSMOS_CONNECTION_STRING, new CosmosClientOptions() {

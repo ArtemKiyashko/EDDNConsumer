@@ -1,0 +1,11 @@
+{
+  "profiles": {
+    "EventHubSender": {
+      "commandName": "Project",
+      "commandLineArgs": "--pathtofile=\"D:\\ed_data\\galaxy_1day.json\"",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

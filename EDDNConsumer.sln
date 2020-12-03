@@ -11,7 +11,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JournalContributor", "Journ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JournalSystemsEventProcessor", "JournalContributorEventHub\JournalSystemsEventProcessor.csproj", "{09C214F1-3C07-48AB-9D7F-D0117D694D00}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{4F93F141-7800-4C78-A928-50210C5F7FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SharedLibrary", "SharedLibrary\SharedLibrary.csproj", "{4F93F141-7800-4C78-A928-50210C5F7FC8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EventHubSender", "EventHubSender\EventHubSender.csproj", "{885D706E-F6F8-4FBC-8F6D-AC59DCE719D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DbReader", "DbReader\DbReader.csproj", "{1999FD65-C0FB-447E-B2DE-FA896644CF47}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{4F93F141-7800-4C78-A928-50210C5F7FC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4F93F141-7800-4C78-A928-50210C5F7FC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4F93F141-7800-4C78-A928-50210C5F7FC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{885D706E-F6F8-4FBC-8F6D-AC59DCE719D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{885D706E-F6F8-4FBC-8F6D-AC59DCE719D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{885D706E-F6F8-4FBC-8F6D-AC59DCE719D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{885D706E-F6F8-4FBC-8F6D-AC59DCE719D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1999FD65-C0FB-447E-B2DE-FA896644CF47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1999FD65-C0FB-447E-B2DE-FA896644CF47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1999FD65-C0FB-447E-B2DE-FA896644CF47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1999FD65-C0FB-447E-B2DE-FA896644CF47}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

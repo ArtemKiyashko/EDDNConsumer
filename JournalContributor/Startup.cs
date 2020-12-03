@@ -18,15 +18,10 @@ namespace JournalContributor
     public class Startup : FunctionsStartup
     {
         private IConfigurationRoot _functionConfig;
-        private readonly string ENVIRONMENT = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 
         public override void Configure(IFunctionsHostBuilder builder)
         {
-            _functionConfig = new ConfigurationBuilder()
-                .AddJsonFile(Path.Combine(builder.GetContext().ApplicationRootPath, "appsettings.json"), optional: true, reloadOnChange: true)
-                .AddJsonFile(Path.Combine(builder.GetContext().ApplicationRootPath, $"appsettings.{ENVIRONMENT}.json"), optional: true, reloadOnChange: true)
-                .Build();
-
+            _functionConfig = new ConfigurationBuilder().AddJsonConfigs(builder).Build();
             builder.Services.AddSingleton<IEventTypeProcessorFactory, EventTypeProcessorFactory>();
             builder.Services.AddTransient<FsdJumpProcessor>();
             builder.Services.AddTransient<ScanProcessor>();
